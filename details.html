@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item Details</title>
+    <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="./1/css/style.css">
+</head>
+<body>
+    <div id="item-details">
+        <!-- Placeholder for item details -->
+    </div>
+
+    <script>
+        // JavaScript to read the item details from the query parameter and insert them into the HTML
+        const params = new URLSearchParams(window.location.search);
+        const itemName = params.get('name');
+        const itemDescription = params.get('description');
+        const itemDetails = params.get('details');
+
+        const itemDetailsDiv = document.getElementById('item-details');
+        itemDetailsDiv.innerHTML = `
+            <h1>${itemName}</h1>
+            <p>${itemDescription}</p>
+            <p>${itemDetails}</p>
+        `;
+    </script>
+</body>
+</html>
