@@ -171,7 +171,7 @@ function sendMail(){
         email : document.getElementById("email").value,
     }
 
-    emailjs.send("service_t63d8fn","template_3xmdxj9",parms) //.then(alert("Email Sent"))
+    emailjs.send("service_t63d8fn","template_3xmdxj9",parms) 
 }
 
 
