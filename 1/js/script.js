@@ -120,17 +120,17 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
    //--- podstranky ---
-   
-document.getElementById('Group 04').addEventListener('click', function() {
-    window.open('Group 04.html', '_blank');
-  });
-  document.getElementById('Group 05').addEventListener('click', function() {
-    window.open('Group 05.html', '_blank');
-  });
-  document.getElementById('Group 02').addEventListener('click', function() {
-    window.open('Group 02.html', '_blank');
-  });
-  openSubpage
+
+ //document.getElementById('Group 04').addEventListener('click', function() {
+    //window.open('Group 04.html', '_blank');
+  //});
+  //document.getElementById('Group 05').addEventListener('click', function() {
+    //window.open('Group 05.html', '_blank');
+  //});
+  //document.getElementById('Group 02').addEventListener('click', function() {
+    //window.open('Group 02.html', '_blank');
+  //});
+  //openSubpage 
 
   /** Youtube video */
 
@@ -171,7 +171,7 @@ function sendMail(){
         email : document.getElementById("email").value,
     }
 
-    emailjs.send("service_t63d8fn","template_3xmdxj9",parms) 
+    emailjs.send("service_t63d8fn","template_3xmdxj9",parms) //.then(alert("Email Sent"))
 }
 
 

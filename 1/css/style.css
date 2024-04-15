@@ -2,9 +2,13 @@
     /* FARBY */
 
     /* farba pozadia */
+    /*Hue(prva hodnota) (odtien): Udyva zakladnu farbu v kruhu farieb (0 az 360 stupnov).0 stupnov predstavuje cervenu, 120 stupnov zelena a 240 stupnov modra.*/
+    /*Saturation(druha hodnota) (sytost): Udava mnozstvo sedi v farbe. 100% plna sytost (ziadna seda), 0% uplna seda (farebny odtien je nepritomny, cisto seda).*/
+    /*Lightness(tretia hodnota) (jas): Udava jas farby. 0% predstavuje ciernu (uplne tmava) a 100% predstavuje bielu (uplne svetla).*/
+    /*Alpha(stvrta hodnota) (priehladnost): Udava mieru priehladnosti farby. Hodnota 1 uplna nepriehladnost (neviditelna), 0 uplna priehladnost (uplne transparentna).*/
 
     --bg-purple: hsla(267, 100%, 63%, 1);
-    --bg-purple-alpha-30: hsla(267, 100%, 63%, 0.3);
+    --bg-purple-alpha-30: hsla(267, 100%, 63%, 0.3); /* Hue 267 stupnov, odtien zeleno-modrej farby. Sytost 100%, farba uplne syta. Jas 63%, stredne svetla farba. Alfa (priehladnost) 0.3, farba je mierne priehladna (30%)*/
     --bg-dark-purple: hsla(279, 42%, 9%, 1);
     --bg-oxford-blue: hsla(240, 63%, 13%, 1);
     --bg-oxford-blue-alpha-95: hsla(240, 63%, 13%, 0.95);
@@ -477,6 +481,7 @@ transition: var(--transition-1);
 }
 
 .upcoming-time .social-wrapper { justify-content: center; }
+
 
 .upcoming-time .social-link {
     color: var(--text-white);
@@ -1040,6 +1045,12 @@ body .cursor.hovered {
     padding: 10px 20px;
     cursor: pointer;
 }
+
+.upcoming-time .custom-button{
+    position: absolute;
+    left: 25px;
+}
+
 .custom-button {
     /* Define the button styles here */
     background-image: var(--gradient-1);
@@ -1049,9 +1060,9 @@ body .cursor.hovered {
     max-width: max-content;
     min-width: 180px;
     height: 50px;
-    display: grid;
+    display: center; /*grid*/
     place-items: center;
-    line-height: 50px;
+    line-height: 50px; /*50*/
     padding-inline: 30px;
     clip-path: var(--clip-path-3);
     overflow: hidden;
